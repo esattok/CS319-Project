@@ -1,0 +1,72 @@
+h1{
+  font-family: 'Quicksand', sans-serif;
+  color: #FFEDDA;
+  letter-spacing: 2px;
+  font-size: 70px;
+  font-weight: 800;
+}
+
+nav{
+
+}
+
+ul {
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding-right: 20px;
+  padding-top: 13px;
+  font-weight: 800;
+}
+
+li {
+  float: right;
+  border: 2px solid #FFEDDA;
+  margin-right: 20px;
+  border-radius: 25px;
+}
+
+li a {
+  display: block;
+  color: #FFEDDA;
+  text-align: center;
+  padding: 9px 20px;
+  text-decoration: none;
+  /* background-size: 200% 100%;
+  background-position: right bottom; */
+  transition: all .5s ease-out;
+  border-radius: 25px;
+}
+
+li a:hover {
+  float: right;
+  background-color: #FFEDDA;
+  border-radius: 25px;
+  color: #0a6ac7;
+  padding: 9px 20px;
+
+}
+
+.headerDiv{
+  height: 500px;
+  background-image: url("Images/BannerImg2.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* background-color: #3DB2FF; */
+}
+
+#mainTitle{
+  text-align: center;
+  padding-left: 400px;
+}
+
+.navBar{
+
+}
