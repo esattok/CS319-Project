@@ -10,11 +10,11 @@ Pandemic Manager
 VitaMind
 
 # Group Members
-Elifnur Alsaç - 21601098
-Esad İsmail Tök - 21801679
-Lamia Başak Amaç - 21601930
-Mohamed Wasim Mohamed Akram - 21801103
-Nima Ghaffarzadeh - 21801432
+* Elifnur Alsaç - 21601098
+* Esad İsmail Tök - 21801679
+* Lamia Başak Amaç - 21601930
+* Mohamed Wasim Mohamed Akram - 21801103
+* Nima Ghaffarzadeh - 21801432
 
 # Description
 
