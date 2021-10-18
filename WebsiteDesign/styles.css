@@ -1,3 +1,6 @@
+body{
+  margin: 0;
+}
 h1{
   font-family: 'Quicksand', sans-serif;
   color: #FFEDDA;
@@ -26,7 +29,7 @@ ul {
 
 li {
   float: right;
-  border: 2px solid #FFEDDA;
+  //border: 2px solid #FFEDDA;
   margin-right: 20px;
   border-radius: 25px;
 }
@@ -41,6 +44,8 @@ li a {
   background-position: right bottom; */
   transition: all .5s ease-out;
   border-radius: 25px;
+  background-color: rgba(0,0,0,0.2);
+
 }
 
 li a:hover {
@@ -49,7 +54,6 @@ li a:hover {
   border-radius: 25px;
   color: #0a6ac7;
   padding: 9px 20px;
-
 }
 
 .headerDiv{
