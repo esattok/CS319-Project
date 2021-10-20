@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 body{
   margin: 0;
 }
-=======
+
 p{
   font-family: 'Dosis', sans-serif;
 }
@@ -10,7 +10,6 @@ body{
   margin: 0;
 }
 
->>>>>>> 65990c39ece8b0aaf2e06a802d5c93d8cd2d7a06
 h1{
   font-family: 'Quicksand', sans-serif;
   color: #FFEDDA;
@@ -40,11 +39,8 @@ ul {
 
 li {
   float: right;
-<<<<<<< HEAD
   //border: 2px solid #FFEDDA;
-=======
   /* border: 2px solid #FFEDDA; */
->>>>>>> 65990c39ece8b0aaf2e06a802d5c93d8cd2d7a06
   margin-right: 20px;
   border-radius: 25px;
 }
@@ -198,7 +194,7 @@ li a:hover {
    transition: filter 250ms;
    font-family: 'Quicksand', sans-serif;
    font-size: 20px;
-   
+
 
  }
  .shadow {
