@@ -387,8 +387,8 @@ li a:hover {
   border-bottom-right-radius: 25px;
 }
 
-.aboutDiv {
-  height: 400px;
+.mainAboutDiv {
+  height: 500px;
   margin-left: 74px;
 }
 
@@ -432,16 +432,63 @@ li a:hover {
   text-decoration-thickness: 1px;
   color: #0a6ac7;
 }
+#missionDiv{
+  display: block;
+}
 
-.missionTitle {
+#aboutDiv{
+  display: none;
+}
+
+#teamDiv{
+  display: none;
+}
+
+/* #missionTitle {
   width: 50%;
 }
 
-.missionPara {
+#missionPara {
   width: 50%;
 }
 
-.missionButton {
+#missionButton {
+  width: 220px;
+  height: 50px;
+  background-color: transparent;
+  margin-right: 20px;
+  border-radius: 25px;
+  border: 2px solid #FFEDDA;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  color: #0a6ac7;
+  transition: all .5s ease-out;
+  box-shadow: 0px 2px 5px 4px rgba(193, 193, 193, 0.4);
+  -webkit-box-shadow: 0px 2px 5px 4px rgba(193, 193, 193, 0.4);
+  -moz-box-shadow: 0px 2px 5px 4px rgba(193, 193, 193, 0.4);
+  cursor: pointer;
+} */
+
+/* #missionButton:hover {
+  width: 220px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 25px;
+  background-color: #0a6ac7;
+  border: 0px;
+  color: #FFEDDA;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+
+} */
+
+.belowBannerTitle{
+  width: 45%;
+}
+.belowBannerPara{
+  width: 45%;
+}
+.belowBannerBtn{
   width: 220px;
   height: 50px;
   background-color: transparent;
@@ -458,7 +505,7 @@ li a:hover {
   cursor: pointer;
 }
 
-.missionButton:hover {
+.belowBannerBtn:hover{
   width: 220px;
   height: 50px;
   margin-right: 20px;
@@ -468,5 +515,30 @@ li a:hover {
   color: #FFEDDA;
   font-family: 'Quicksand', sans-serif;
   font-size: 20px;
-  /* font-weight: bold; */
+}
+
+#aboutImage{
+  width: 45%;
+  height:300px;
+  float: right;
+  position: absolute;
+  margin-left: 46%;
+  margin-top: -280px;
+  border-radius: 10px;
+}
+
+.aboutVaccineImage{
+  opacity: 0.05;
+  width: 20%;
+  position: absolute;
+  padding-left: 60%;
+  z-index: -100;
+}
+
+.aboutHeartImage{
+  opacity: 0.04;
+  width: 25%;
+  position: absolute;
+  padding-left: 20%;
+  z-index: -100;
 }
