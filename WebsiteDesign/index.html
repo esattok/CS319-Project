@@ -10,6 +10,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -18,10 +25,10 @@
     <nav class="navBar">
       <ul>
         <!-- <li class = "mainLogoList"><img src="Images/Logo2.png" alt="" class = "mainLogo"></li> -->
-        <li><a class="active" href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a class = "login" href="regularLogin.html">Login</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
+        <li><a class="active" href="#home">Home</a></li>
       </ul>
     </nav>
     <div class="bannerDiv">
@@ -29,7 +36,7 @@
       <p id="mainSlogan">An ounce of prevention is worth a pound of cure</p>
       <div class="buttonDiv">
         <!-- <button type="button" name="button" id="bannerBtn1">Button 1</button> -->
-        <button type="button" name="button" id="bannerBtn2">Sign In</button>
+        <a href = "regularLogin.html"><button type="button" name="button" id="bannerBtn2">Sign In</button></a>
         <button class="pushable">
           <span class="shadow"></span>
           <span class="edge"></span>
@@ -52,42 +59,79 @@
 
   <!-- -----------------About Section---------------------- -->
   <div class="mainAboutDiv">
-    <img src="Images/VaccineImage.jpg" alt="" class = "aboutVaccineImage">
-    <img src="Images/RedHeart.png" alt="" class = "aboutHeartImage">
+    <img src="Images/VaccineImage.jpg" alt="" class="aboutVaccineImage">
+    <img src="Images/RedHeart.png" alt="" class="aboutHeartImage">
     <h2>About Us</h2>
     <hr class="aboutLine">
     <br>
     <div class="topnav">
-      <a class="active" href="#home" id = "#missionNav">Mission</a>
-      <a href="#news" id = "#aboutNav">About</a>
-      <a href="#contact" id = "#teamNav">Team</a>
+      <a class="active" href="#home" id="#missionNav">Mission</a>
+      <a href="#news" id="#aboutNav">About</a>
+      <a href="#contact" id="#teamNav">Team</a>
     </div>
     <div id="missionDiv">
-      <h3 id = "missionTitle" class = "belowBannerTitle">Lorem ipsum dolor sit amet, ne mel erant lobortis inimicus, utinam mediocritatem pro id, senserit praesent at vix. Assum tantas audiam ea sed, purto delenit sed ne.</h3>
-      <p id="missionPara"  class = "belowBannerPara">Lorem ipsum dolor sit amet, latine accumsan an mei, pri malis adipiscing ne. Sed ullum officiis eu, quo id eius ubique sanctus, sea quando discere ad. Sea vocent luptatum probatus ea. Eu aliquip persius vix. Ad volutpat dissentiunt his, has no minimum voluptatibus</p>
+      <h3 id="missionTitle" class="belowBannerTitle">Our goal is to create a website that will help people cope with the struggles related to COVID-19</h3>
+      <p id="missionPara" class="belowBannerPara">This website will have various helpful faeatures which will make it easier for people to monitor the status of any COVID-19 related information</p>
       <br>
-      <img src="Images/Scenery1.jpg" alt="" class = "scenery1" id = "aboutImage">
-      <button type="button" name="button" id="missionButton" class = "belowBannerBtn">Learn More</button>
+      <img src="Images/Scenery1.jpg" alt="" class="scenery1" id="aboutImage">
+      <button type="button" name="button" id="missionButton" class="belowBannerBtn">Learn More</button>
     </div>
 
     <div id="aboutDiv">
-      <h3 id = "aboutTitle" class = "belowBannerTitle">Lorem ipsum dolor sit amet, te pro veri cotidieque. An exerci facilis expetendis vim. Everti tacimates principes ad pro, vivendo accusamus ius ut. Pro sonet lobortis consequuntur et, et est nihil mediocritatem. Recteque conceptam definitionem ea qui, platonem democritum usu an.</h3>
-      <p id="aboutPara" class = "belowBannerPara">Sed in deseruisse adipiscing argumentum, harum deserunt at eum. At aliquid reprehendunt qui</p>
+      <h3 id="aboutTitle" class="belowBannerTitle">Lorem ipsum dolor sit amet, te pro veri cotidieque. An exerci facilis expetendis vim. Everti tacimates principes ad pro, vivendo accusamus ius ut. Pro sonet lobortis consequuntur et, et est nihil
+        mediocritatem. Recteque conceptam definitionem ea qui, platonem democritum usu an.</h3>
+      <p id="aboutPara" class="belowBannerPara">Sed in deseruisse adipiscing argumentum, harum deserunt at eum. At aliquid reprehendunt qui</p>
       <br>
-      <img src="Images/Scenery2.jpg" alt="" class = "scenery2" id = "aboutImage">
-      <button type="button" name="button" id="aboutButton" class = "belowBannerBtn">Learn More</button>
+      <img src="Images/Scenery2.jpg" alt="" class="scenery2" id="aboutImage">
+      <button type="button" name="button" id="aboutButton" class="belowBannerBtn">Learn More</button>
     </div>
 
     <div id="teamDiv">
-      <h3 id = "teamTitle" class = "belowBannerTitle">Lorem ipsum dolor sit amet, est at mutat inani euripidis. Sed ex lorem clita possit. Pro prompta disputationi eu, ut gloriatur argumentum concludaturque his. An his nostrum corrumpit, cu mutat falli meliore eam</h3>
-      <p id="teamPara" class = "belowBannerPara">An hinc zril sed, eos choro invenire complectitur no. Nec at wisi integre, per diam aliquid vituperata ad. Id reque dicit nemore has, omnis intellegam vix at, est ut velit appareat</p>
+      <h3 id="teamTitle" class="belowBannerTitle">Lorem ipsum dolor sit amet, est at mutat inani euripidis. Sed ex lorem clita possit. Pro prompta disputationi eu, ut gloriatur argumentum concludaturque his. An his nostrum corrumpit, cu mutat falli
+        meliore eam</h3>
+      <p id="teamPara" class="belowBannerPara">An hinc zril sed, eos choro invenire complectitur no. Nec at wisi integre, per diam aliquid vituperata ad. Id reque dicit nemore has, omnis intellegam vix at, est ut velit appareat</p>
       <br>
-      <img src="Images/Scenery3.jpg" alt="" class = "scenery3" id = "aboutImage">
-      <button type="button" name="button" id="teamButton" class = "belowBannerBtn">Learn More</button>
+      <img src="Images/Scenery3.jpg" alt="" class="scenery3" id="aboutImage">
+      <button type="button" name="button" id="teamButton" class="belowBannerBtn">Learn More</button>
     </div>
 
   </div>
   <!-- -----------------About Section---------------------- -->
+
+  <!-- -----------------Services Section---------------------- -->
+
+  <div class="serviceDiv">
+    <div class="concave">
+    </div>
+    <h2 class="serviceTitle">Services</h2>
+    <hr class="serviceLine">
+    <br>
+    <div class="serviceColumns">
+      <div class="service1" id="allServices">
+        <div class="cirlce1" id="allCircles">
+          <i class="fas fa-diagnoses"></i>
+        </div>
+      </div>
+      <div class="service2" id="allServices">
+        <div class="cirlce2" id="allCircles">
+          <i class="fas fa-diagnoses"></i>
+        </div>
+      </div>
+      <div class="service3" id="allServices">
+        <div class="cirlce3" id="allCircles">
+          <i class="fas fa-diagnoses"></i>
+        </div>
+      </div>
+      <div class="service4" id="allServices">
+        <div class="cirlce4" id="allCircles">
+          <i class="fas fa-diagnoses"></i>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- -----------------Services Section---------------------- -->
   <script type="text/javascript" src="script.js"></script>
 </body>
+
 </html>

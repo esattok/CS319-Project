@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --whitish: #FFEDDA;
+  --light-blue: #7CB3DA;
+  --dark-blue: #0a6ac7;
+  --red: #FF2442;
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+  color: var(--whitish);
+  letter-spacing: 0.2px;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: #FFEDDA;
+  letter-spacing: 2px;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  color: black;
+  letter-spacing: 0.5px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+nav {}
+
+ul {
+  font-family: 'Quicksand', sans-serif;
+  list-style-type: none;
+  height: 55px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.15);
+  padding-right: 20px;
+  padding-top: 13px;
+  font-weight: 800;
+  z-index: 999;
+}
+
+li {
+  float: right;
+  //border: 2px solid #FFEDDA;
+  /* border: 2px solid #FFEDDA; */
+  margin-right: 20px;
+  border-radius: 25px;
+}
+
+li a {
+  display: block;
+  color: #FFEDDA;
+  text-align: center;
+  padding: 9px 20px;
+  text-decoration: none;
+  /* background-size: 200% 100%;
+    background-position: right bottom; */
+  transition: all .5s ease-out;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+li a:hover {
+  float: right;
+  background-color: #FFEDDA;
+  border-radius: 25px;
+  color: #0a6ac7;
+  padding: 9px 20px;
+}
+
+.backgroundImg {
+  /* background-image: url('Images/COVIDImg.jpg'); */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  opacity: 0.15;
+}
+
+.overlayImg {
+  background-color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+
+.formDiv {
+  width: 30%;
+  height: 70%;
+  /* Center vertically and horizontally */
+  position: absolute;
+  top: 13%;
+  left: 35%;
+  margin: -25px 0 0 -25px;
+  text-align: center;
+}
+
+.SignInText {
+  color: var(--whitish);
+  font-size: 50px;
+}
+
+.smallSlogan {
+  margin-top: -20px;
+  font-size: 23px;
+}
+
+input[type='number'], input[type='password'] {
+  margin-top: 15px;
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  width: 78%;
+  height: 40px;
+  text-indent: 10px;
+  border-radius: 7px;
+  border: 0px solid;
+  background-color: rgba(255, 255, 255, 0.21);
+  color: var(--whitish);
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--whitish);
+  opacity: 0.7;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--whitish);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--whitish);
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+#id {
+  margin-bottom: 10px;
+}
+
+label {
+  color: var(--whitish);
+  float: left;
+  margin-left: 1.5%;
+  font-family: 'Dosis', sans-serif;
+  margin-top: -0.4%;
+}
+
+input[type='checkbox'] {
+  float: left;
+  margin-left: 11%;
+}
+
+.forgotPassword {
+  margin-left: 12%;
+  background-color: transparent;
+  border: 0px;
+  color: var(--light-blue);
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  margin-top: -0.4%;
+}
+
+.forgotPassword:hover {
+  color: var(--dark-blue);
+  transition: 0.3s
+}
+
+#loginBtn {
+  width: 78%;
+  height: 40px;
+  background-color: var(--whitish);
+  border: 0px;
+  border-radius: 7px;
+  color: var(--dark-blue);
+  font-family: 'Dosis', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#loginBtn:hover {
+  background-color: var(--dark-blue);
+  color: var(--whitish);
+  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
+}

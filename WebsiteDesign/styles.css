@@ -1,3 +1,10 @@
+:root {
+  --whitish: #FFEDDA;
+  --light-blue: #7CB3DA;
+  --dark-blue: #0a6ac7;
+  --red: #FF2442;
+}
+
 body {
   margin: 0;
 }
@@ -43,9 +50,9 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  background-color: rgba(0, 0, 0, 0.15);
   padding-right: 20px;
   padding-top: 13px;
   font-weight: 800;
@@ -80,6 +87,8 @@ li a:hover {
   color: #0a6ac7;
   padding: 9px 20px;
 }
+
+
 
 .headerDiv {
   background-image: url("Images/NewBannerImg.jpg");
@@ -432,63 +441,28 @@ li a:hover {
   text-decoration-thickness: 1px;
   color: #0a6ac7;
 }
-#missionDiv{
+
+#missionDiv {
   display: block;
 }
 
-#aboutDiv{
+#aboutDiv {
   display: none;
 }
 
-#teamDiv{
+#teamDiv {
   display: none;
 }
 
-/* #missionTitle {
-  width: 50%;
-}
-
-#missionPara {
-  width: 50%;
-}
-
-#missionButton {
-  width: 220px;
-  height: 50px;
-  background-color: transparent;
-  margin-right: 20px;
-  border-radius: 25px;
-  border: 2px solid #FFEDDA;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-  color: #0a6ac7;
-  transition: all .5s ease-out;
-  box-shadow: 0px 2px 5px 4px rgba(193, 193, 193, 0.4);
-  -webkit-box-shadow: 0px 2px 5px 4px rgba(193, 193, 193, 0.4);
-  -moz-box-shadow: 0px 2px 5px 4px rgba(193, 193, 193, 0.4);
-  cursor: pointer;
-} */
-
-/* #missionButton:hover {
-  width: 220px;
-  height: 50px;
-  margin-right: 20px;
-  border-radius: 25px;
-  background-color: #0a6ac7;
-  border: 0px;
-  color: #FFEDDA;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
-
-} */
-
-.belowBannerTitle{
+.belowBannerTitle {
   width: 45%;
 }
-.belowBannerPara{
+
+.belowBannerPara {
   width: 45%;
 }
-.belowBannerBtn{
+
+.belowBannerBtn {
   width: 220px;
   height: 50px;
   background-color: transparent;
@@ -505,7 +479,7 @@ li a:hover {
   cursor: pointer;
 }
 
-.belowBannerBtn:hover{
+.belowBannerBtn:hover {
   width: 220px;
   height: 50px;
   margin-right: 20px;
@@ -517,9 +491,9 @@ li a:hover {
   font-size: 20px;
 }
 
-#aboutImage{
+#aboutImage {
   width: 45%;
-  height:300px;
+  height: 300px;
   float: right;
   position: absolute;
   margin-left: 46%;
@@ -527,7 +501,7 @@ li a:hover {
   border-radius: 10px;
 }
 
-.aboutVaccineImage{
+.aboutVaccineImage {
   opacity: 0.05;
   width: 20%;
   position: absolute;
@@ -535,10 +509,104 @@ li a:hover {
   z-index: -100;
 }
 
-.aboutHeartImage{
+.aboutHeartImage {
   opacity: 0.04;
   width: 25%;
   position: absolute;
   padding-left: 20%;
   z-index: -100;
+}
+
+.concave {
+  height: 30px;
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.serviceDiv {
+  height: 500px;
+  border-top-left-radius: -25px;
+  border-top-right-radius: -25px;
+  background-color: var(--light-blue);
+}
+
+.serviceTitle {
+  text-align: center;
+  color: var(--whitish);
+}
+
+.serviceLine {
+  width: 10%;
+  height: 2px;
+  /* background-color: linear-gradient(#0a6ac7, #FF2442); */
+  border: 0px solid;
+  background: linear-gradient(to right, #0a6ac7, #FF2442);
+  margin-top: -15px;
+}
+
+.serviceColumns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+.service1 {
+  margin-left: 40px;
+}
+
+.service2 {}
+
+.service3 {}
+
+.service4 {
+  margin-right: 40px;
+}
+
+.cirlce1 {}
+
+#allCircles {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--whitish);
+  margin-left: auto;
+  margin-right: auto;
+  background: transparent;
+  -webkit-transition: background 0.5s linear;
+  -moz-transition: background 0.5s linear;
+  -o-transition: background 0.5s linear;
+  transition: background 0.5s linear;
+  background-size: 0 0;
+}
+
+#allCircles:hover {
+  border: 2px solid var(--light-blue);
+  background: linear-gradient(135deg, var(--dark-blue) 0%, var(--red) 100%);
+  box-shadow: 0px 0px 10px 7px rgba(97, 157, 196, 1);
+  -webkit-box-shadow: 0px 0px 10px 7px rgba(97, 157, 196, 1);
+  -moz-box-shadow: 0px 0px 10px 7px rgba(97, 157, 196, 1);
+  background-position: 150px 0px;
+}
+
+#allServices {
+  width: 220px;
+  height: 250px;
+}
+
+.fas {
+  margin-left: 30%;
+  margin-top: 27%;
+  color: var(--whitish);
+  font-size: 50px;
+  opacity: 1 !important;
+}
+
+
+.rectangle{
+  width: 200px;
+  height: 35px;
+  border-radius: 10px;
+  border: 2px solid black;
 }
