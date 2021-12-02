@@ -1,0 +1,101 @@
+:root {
+  --whitish: #FFEDDA;
+  --light-blue: #7CB3DA;
+  --dark-blue: #0a6ac7;
+  --red: #FF2442;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-blue);
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: #FFEDDA;
+  /* letter-spacing: 2px; */
+  font-size: 80px;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--whitish);
+  /* letter-spacing: 0.5px; */
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  color: var(--whitish);
+  /* letter-spacing: 0.5px; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.5;
+}
+
+.myProfile{
+  font-size: 30px;
+  margin-left: 50px;
+  display: inline;
+  font-weight: 400;
+
+}
+
+.logOut{
+  display: inline;
+  font-weight: 500;
+  float: right;
+  margin-right: 50px;
+  margin-top: 0px;
+}
+
+.fa-cog{
+  color: var(--whitish);
+  float: right;
+  margin-right: 50px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.separator{
+  opacity: 0.4;
+}
+
+.profileDetails{
+  display: flex;
+  width: 92%;
+  /* height: 100px; */
+  margin-left: 50px;
+}
+
+.profileImgDiv{
+  flex-basis: 13%;
+}
+
+.userDetails{
+  flex-basis: 45%;
+}
+
+.medicalDetails{
+  flex-basis: 42%;
+}
+
+.profileDiv{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px solid rgba(10, 106, 199, 0.25);
+  box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.21);
+-webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.21);
+-moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.21);
+}
+
+.innerMedDetails{
+  text-align: right;
+}

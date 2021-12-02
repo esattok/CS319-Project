@@ -91,11 +91,15 @@ li a:hover {
 
 
 .headerDiv {
-  background-image: url("Images/NewBannerImg.jpg");
-  /* background-color: #7CB3DA; */
-  height: 590px;
-  background-position: center;
+  /* background-image: url("Images/MainBanner.png"); */
+  background-color: #7CB3DA;
+  /* height: 590px; */
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain;
+  width: 98.7vw;
+  height: 100vh;
+  display: block;
   background-size: cover;
 }
 
@@ -609,4 +613,20 @@ li a:hover {
   height: 35px;
   border-radius: 10px;
   border: 2px solid black;
+}
+
+.healthCase{
+  position: absolute;
+  width: 190px;
+  height: 180px;
+  bottom: 0;
+  left:0;
+}
+
+.heartDoctor{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  bottom: 0;
+  right: 0;
 }

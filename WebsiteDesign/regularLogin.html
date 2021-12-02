@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>VitaMind</title>
+  <title>Sign In - VitaMind</title>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <link rel="stylesheet" href="loginStyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,21 +22,21 @@
 
 <body>
   <div class="overlayImg">
-    <img class = "backgroundImg" src="Images/HeartBeat2.jpg" alt="">
+    <img class="backgroundImg" src="Images/HeartBeat2.jpg" alt="">
 
     <div class="formDiv">
-      <h2 class = "SignInText">Sign In</h2>
-      <p class = "smallSlogan">Sign in and start managing your life!</p>
+      <h2 class="SignInText">Sign In</h2>
+      <p class="smallSlogan">Sign in and start managing your life!</p>
       <form class="loginForm" action="index.html" method="post">
         <input type="number" id="id" name="id" placeholder="User ID"><br>
         <input type="password" id="password" name="password" placeholder="Password"><br><br>
-            <input type="checkbox" id="rememberMe" name="rem" value="rememberMe">
-            <label for="rem"> Remember me</label>
-            <button class = "forgotPassword" type="button" name="button">Forgot Password?</button><br /><br><<br>
-            <input type="button" name="loginBtn" value="Login" id = "loginBtn">
-        </div>
-      </form>
+        <input type="checkbox" id="rememberMe" name="rem" value="rememberMe">
+        <label for="rem"> Remember me</label>
+        <button class="forgotPassword" type="button" name="button">Forgot Password?</button><br /><br><br />
+        <a href = "dashboard.html"><input type="button" name="loginBtn" value="Login" id="loginBtn"></a>
     </div>
+    </form>
+  </div>
   </div>
 
   <script type="text/javascript" src="script.js"></script>

@@ -51,7 +51,7 @@ ul {
   overflow: hidden;
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.3);
   padding-right: 20px;
   padding-top: 13px;
   font-weight: 800;
@@ -95,11 +95,11 @@ li a:hover {
   width: 100vw;
   height: 100vh;
   display: block;
-  opacity: 0.15;
+  opacity: 0.25;
 }
 
 .overlayImg {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: rgba(10, 106, 199, 0.8);
   position: relative;
 }
 
@@ -110,6 +110,7 @@ li a:hover {
   position: absolute;
   top: 13%;
   left: 35%;
+  right: 35%;
   margin: -25px 0 0 -25px;
   text-align: center;
 }
@@ -133,7 +134,7 @@ input[type='number'], input[type='password'] {
   text-indent: 10px;
   border-radius: 7px;
   border: 0px solid;
-  background-color: rgba(255, 255, 255, 0.21);
+  background-color: rgba(0, 0, 0, 0.3);
   color: var(--whitish);
 }
 
@@ -188,14 +189,14 @@ input[type='checkbox'] {
   margin-left: 12%;
   background-color: transparent;
   border: 0px;
-  color: var(--light-blue);
+  color: var(--whitish);
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   margin-top: -0.4%;
 }
 
 .forgotPassword:hover {
-  color: var(--dark-blue);
+  color: var(--light-blue);
   transition: 0.3s
 }
 
@@ -217,9 +218,9 @@ input[type='checkbox'] {
 }
 
 #loginBtn:hover {
-  background-color: var(--dark-blue);
+  background-color: var(--light-blue);
   color: var(--whitish);
-  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
 }
