@@ -65,14 +65,14 @@ li {
   /* border: 2px solid #FFEDDA; */
   margin-right: 20px;
   border-radius: 25px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 li a {
   display: block;
   color: #FFEDDA;
   text-align: center;
-  padding: 9px 20px;
+  padding: 6px 20px;
   text-decoration: none;
   /* background-size: 200% 100%;
   background-position: right bottom; */
@@ -86,7 +86,7 @@ li a:hover {
   background-color: #FFEDDA;
   border-radius: 25px;
   color: #0a6ac7;
-  padding: 9px 20px;
+  padding: 6px 20px;
 }
 
 

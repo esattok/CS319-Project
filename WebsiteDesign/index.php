@@ -1,42 +1,18 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<?php include('includes/header.php') ?>
+<title>VitaMind</title>
+<link rel="stylesheet" href="styles.css">
 
-<head>
-  <meta charset="utf-8">
-  <title>VitaMind</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-</head>
 
-<body>
   <!-- -----------------NavBar+Banner---------------------- -->
   <div class="headerDiv">
-    <nav class="navBar">
-      <ul>
-        <!-- <li class = "mainLogoList"><img src="Images/Logo2.png" alt="" class = "mainLogo"></li> -->
-        <li><a class = "login" href="regularLogin.html">Login</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a class="active" href="#home">Home</a></li>
-      </ul>
-    </nav>
+    <?php include('includes/navbar.php') ?>
     <div class="bannerDiv">
-      <h1 id="mainTitle">VitaMind</h1>
+      <!-- <h1 id="mainTitle">VitaMind</h1> -->
+      <img class = "homeLogo" src="Images/WebsiteIcons/Logo2New.png" alt="">
       <p id="mainSlogan">An ounce of prevention is worth a pound of cure</p>
       <div class="buttonDiv">
         <!-- <button type="button" name="button" id="bannerBtn1">Button 1</button> -->
-        <a href = "regularLogin.html"><button type="button" name="button" id="bannerBtn2">Sign In</button></a>
+        <a href = "regularLogin.php"><button type="button" name="button" id="bannerBtn2">Sign In</button></a>
         <button class="pushable">
           <span class="shadow"></span>
           <span class="edge"></span>
@@ -133,7 +109,5 @@
     </div>
   </div>
   <!-- -----------------Services Section---------------------- -->
-  <script type="text/javascript" src="script.js"></script>
-</body>
 
-</html>
+  <?php include('includes/footer.php') ?>

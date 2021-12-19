@@ -12,32 +12,36 @@ body {
 
 p {
   font-family: 'Dosis', sans-serif;
-  color: var(--whitish);
+  color: var(--dark-blue);
   letter-spacing: 0.2px;
+  text-align: center;
 }
 
 h1 {
   font-family: 'Quicksand', sans-serif;
-  color: #FFEDDA;
+  color: var(--dark-blue);
   letter-spacing: 2px;
-  font-size: 80px;
+  font-size: 60px;
   font-weight: 800;
+  text-align: center;
 }
 
 h2 {
   font-family: 'Quicksand', sans-serif;
   color: black;
   letter-spacing: 0.5px;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 600;
+  text-align: center;
 }
 
 h3 {
   font-family: 'Dosis', sans-serif;
-  color: black;
+  color: var(--dark-blue) !important;
   letter-spacing: 0.5px;
   font-size: 20px;
   font-weight: 600;
+  text-align: center;
 }
 
 nav {}
@@ -87,38 +91,36 @@ li a:hover {
   padding: 9px 20px;
 }
 
-.backgroundImg {
-  /* background-image: url('Images/COVIDImg.jpg'); */
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: auto;
-  height: auto;
-  display: block;
-  opacity: 0.25;
-}
 
 .overlayImg {
-  background-color: rgba(10, 106, 199, 0.8);
-  position: relative;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(0deg, rgba(10, 106, 199, 0.3), rgba(10, 106, 199, 1)), url("Images/Heartbeat2.jpg");
+  background-position: center;
+  background-size: cover;
+  position: absolute;
 }
 
 .formDiv {
-  width: 30%;
-  height: 70%;
+  width: 370px;
+  height: 450px;
   /* Center vertically and horizontally */
-  position: absolute;
-  top: 13%;
-  left: 35%;
-  right: 35%;
-  margin: -25px 0 0 -25px;
-  text-align: center;
+  position: relative;
+  margin: 5% auto;
+  background: #fff;
+  padding: 5px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
 
 .SignInText {
-  color: var(--whitish);
+  color: var(--dark-blue);
   font-size: 40px;
-  margin-top: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .smallSlogan {
@@ -126,8 +128,9 @@ li a:hover {
   font-size: 23px;
 }
 
-input[type='number'], input[type='password'] {
-  margin-top: 15px;
+input {
+  margin: 15px auto;
+  display: block;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   width: 78%;
@@ -135,8 +138,8 @@ input[type='number'], input[type='password'] {
   text-indent: 10px;
   border-radius: 7px;
   border: 0px solid;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: var(--whitish);
+  background-color: rgba(0, 0, 0, 0.1);
+  color: var(--dark-blue);
 }
 
 input[type='number'] {
@@ -150,19 +153,19 @@ input::-webkit-inner-spin-button {
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: var(--whitish);
+  color: var(--dark-blue);
   opacity: 0.7;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: var(--whitish);
+  color: var(--dark-blue);
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: var(--whitish);
+  color: var(--dark-blue);
 }
 
 textarea:focus, input:focus {
@@ -170,11 +173,11 @@ textarea:focus, input:focus {
 }
 
 #id {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 label {
-  color: var(--whitish);
+  color: var(--dark-blue);
   float: left;
   margin-left: 1.5%;
   font-family: 'Dosis', sans-serif;
@@ -190,7 +193,7 @@ input[type='checkbox'] {
   margin-left: 12%;
   background-color: transparent;
   border: 0px;
-  color: var(--whitish);
+  color: var(--dark-blue);
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
   margin-top: -0.4%;
@@ -204,27 +207,27 @@ input[type='checkbox'] {
 #loginBtn {
   width: 78%;
   height: 40px;
-  background-color: var(--whitish);
+  background: linear-gradient(to right, var(--light-blue), var(--dark-blue));
   border: 0px;
   border-radius: 7px;
-  color: var(--dark-blue);
+  color: var(--whitish);
   font-family: 'Dosis', sans-serif;
   font-size: 17px;
   font-weight: bold;
-  box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
-  -webkit-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
-  -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
-  transition: 0.3s;
-  cursor: pointer;
-  margin-top: -10px;
-}
-
-#loginBtn:hover {
-  background-color: var(--light-blue);
-  color: var(--whitish);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  cursor: pointer;
+  /* margin-top: 10px; */
+  margin: 10px auto;
+  display: block;
+}
+
+#loginBtn:hover {
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
 }
 
 .homeAnchor{
@@ -232,6 +235,62 @@ input[type='checkbox'] {
 }
 
 .loginTitle{
-  color: var(--whitish);
+  color: var(--dark-blue);
   margin: 0;
+  text-align: center;
+}
+
+.error{
+  color: var(--dark-blue);
+  font-family: 'Dosis', sans-serif;
+  /* padding-top: 10px; */
+  text-align: center;
+}
+
+.button-box{
+  width: 280px;
+  height: 30px;
+  margin: 10px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+
+}
+
+.toggle-btn{
+  width: 49%;
+  /* padding: 0 20px; */
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  display: inline;
+  color: var(--dark-blue);
+  position: relative;
+  z-index: 999;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  margin-top: 1px;
+}
+
+#btn{
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 49%;
+  height: 100%;
+  background: linear-gradient(to right, var(--whitish), var(--light-blue));
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+#studentSignup{
+  position: relative;
+  visibility: visible;
+}
+
+#adminSignup{
+  position: relative;
+  top: -199px;
+  visibility: collapse;
 }

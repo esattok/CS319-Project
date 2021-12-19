@@ -3,43 +3,20 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sign In - VitaMind</title>
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-  <link rel="stylesheet" href="loginStyles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Playfair+Display&family=Quicksand&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="overlayImg">
-    <img class="backgroundImg" src="Images/HeartBeat2.jpg" alt="">
-
-    <div class="formDiv">
-      <h2 class="SignInText">Sign In</h2>
-      <p class="smallSlogan">Sign in and start managing your life!</p>
-      <form class="loginForm" action="index.html" method="post">
-        <input type="number" id="id" name="id" placeholder="User ID"><br>
-        <input type="password" id="password" name="password" placeholder="Password"><br><br>
-        <input type="checkbox" id="rememberMe" name="rem" value="rememberMe">
-        <label for="rem"> Remember me</label>
-        <button class="forgotPassword" type="button" name="button">Forgot Password?</button><br /><br><br />
-        <a href = "dashboard.html"><input type="button" name="loginBtn" value="Login" id="loginBtn"></a>
-    </div>
-    </form>
-  </div>
-  </div>
-
-  <script type="text/javascript" src="script.js"></script>
-</body>
-
-</html>

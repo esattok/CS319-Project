@@ -111,7 +111,7 @@ li a:hover {
   top: 13%;
   left: 35%;
   right: 35%;
-  margin: -25px 0 0 -25px;
+  margin: -65px 0 0 -25px;
   text-align: center;
 }
 
@@ -126,7 +126,7 @@ li a:hover {
   font-size: 23px;
 }
 
-input[type='number'], input[type='password'] {
+input {
   margin-top: 15px;
   font-family: 'Dosis', sans-serif;
   font-size: 15px;
@@ -170,7 +170,7 @@ textarea:focus, input:focus {
 }
 
 #id {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 }
 
 label {
@@ -201,7 +201,7 @@ input[type='checkbox'] {
   transition: 0.3s
 }
 
-#loginBtn {
+#signUpBtn {
   width: 78%;
   height: 40px;
   background-color: var(--whitish);
@@ -216,10 +216,10 @@ input[type='checkbox'] {
   -moz-box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.5);
   transition: 0.3s;
   cursor: pointer;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
-#loginBtn:hover {
+#signUpBtn:hover {
   background-color: var(--light-blue);
   color: var(--whitish);
   box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
