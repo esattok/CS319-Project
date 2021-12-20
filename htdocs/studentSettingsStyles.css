@@ -1,0 +1,170 @@
+:root {
+  --whitish: #FFEDDA;
+  --light-blue: #7CB3DA;
+  --dark-blue: #0a6ac7;
+  --red: #FF2442;
+}
+
+body {
+  margin: 0;
+  background-color: var(--light-blue);
+}
+
+p {
+  font-family: 'Dosis', sans-serif;
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  color: #FFEDDA;
+  /* letter-spacing: 2px; */
+  font-size: 80px;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: var(--whitish);
+  /* letter-spacing: 0.5px; */
+  font-size: 40px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: 'Dosis', sans-serif;
+  color: var(--whitish);
+  /* letter-spacing: 0.5px; */
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.5;
+}
+.settings{
+  font-size: 30px;
+  margin-left: 20px;
+  display: inline-flex;
+  font-weight: 400;
+  /* margin-top: -20px !important; */
+  vertical-align: middle;
+  margin-top: 20px;
+}
+
+.logOut{
+  display: inline;
+  font-weight: 500;
+  float: right;
+  margin-right: 50px;
+  margin-top: 20px;
+  height: 10px;
+}
+
+.separator{
+  color: var(--dark-blue);
+  height: 2px !important;
+  opacity: 0.18;
+  z-index: 9999;
+  box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.21);
+-webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.21);
+-moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.21);
+}
+
+.smallLogo{
+  width: 180px;
+  padding-left: 30px;
+  display: inline;
+  margin-bottom: 0px;
+  position: relative;
+  top: 5px;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.settingsInput{
+  display: block;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+}
+
+.mainDetailsClass{
+  margin-left: 40px;
+}
+
+/* .medicalDetailsClass{
+  margin-left: -40px;
+} */
+
+label{
+  font-family: 'Quicksand', sans-serif;
+  color: #FFEDDA;
+  /* letter-spacing: 2px; */
+  font-size: 23px;
+  font-weight: 800;
+}
+
+input{
+  margin-bottom: 10px;
+}
+
+select{
+  margin-bottom: 10px;
+}
+
+input, select{
+  font-family: 'Dosis', sans-serif;
+  font-size: 15px;
+  width: 78%;
+  height: 40px;
+  text-indent: 10px;
+  border-radius: 7px;
+  border: 0px solid;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: var(--dark-blue);
+
+}
+
+input:focus {
+  outline-style: solid;
+  outline-color: var(--dark-blue);
+  outline-width: 1.4px;
+}
+
+select:focus {
+  outline-style: solid;
+  outline-color: var(--dark-blue);
+  outline-width: 1.4px;
+}
+
+::placeholder{
+  color: var(--dark-blue);
+  opacity: 0.7;
+}
+
+#save_settings{
+  background-color: var(--whitish);
+  width: 250px;
+  height: 40px;
+  border-radius: 7px;
+  color: var(--dark-blue);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  margin: 15px auto 5px auto;
+  outline: none;
+  border: 0px;
+  transition: 0.3s;
+  box-shadow: 8px 8px 8px -5px rgba(66,66,66,0.5);
+-webkit-box-shadow: 8px 8px 8px -5px rgba(66,66,66,0.5);
+-moz-box-shadow: 8px 8px 8px -5px rgba(66,66,66,0.5);
+}
+
+#save_settings:hover{
+  color: var(--whitish);
+  background-color: var(--dark-blue);
+}

@@ -15,13 +15,13 @@
       <a href = "index.php"><img class = "smallLogo" src="Images/WebsiteIcons/SmallLogoFinal.png" alt=""></a>
       <!-- <br> -->
       <h3 class = "myProfile">My Profile</h3>
-      <i class="fas fa-cog"></i>
+      <a class="settingsPage" href="studentSettings.php"><i class="fas fa-cog"></i></a>
       <h3 class = "logOut">Log Out <i class="fas fa-sign-out-alt"></i></h3>
       <hr class = "separator">
     </div>
 
     <div class="profileDetails">
-      <div class="child profileImgDiv"><img class = "profileDiv" src="Images/HealthCase.png" alt=""></div>
+      <!-- <div class="child profileImgDiv"><img class = "profileDiv" src="Images/HealthCase.png" alt=""></div> -->
       <div class="child userDetails">
         <h3 class = "child">Full Name: </h3>
         <h3 class = "child">Email: </h3>

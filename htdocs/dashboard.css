@@ -163,9 +163,13 @@ margin-top: 15px;
   display: inline;
   margin-bottom: 0px;
   position: relative;
-  top: 7px;
+  top: 4px;
 }
 
 .child{
   line-height: 1;
+}
+
+.fa-sign-out-alt:hover{
+  color: var(--dark-blue);
 }
