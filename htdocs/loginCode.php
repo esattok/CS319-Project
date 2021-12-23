@@ -11,9 +11,11 @@ if(!$con){
       $result = pg_query($con, $query);
       $val = pg_fetch_result($result, 0, 1);
       $uname = pg_fetch_result($result, 0, 2);
+      $finalid = pg_fetch_result($result, 0, 0);
       if(password_verify($password,$val)){
         $msg = "Login Successful";
         $_SESSION['uname'] = $uname;
+        $_SESSION['finalid'] = $finalid;
         $_SESSION['user_start'] = time();
         header("Location: dashboard.php");
       }else{
@@ -40,6 +42,6 @@ if(!$con){
     }
   }
   // header("Location: signUp.php");
-  pg_close($con);
+  // pg_close($con);
 }
 ?>

@@ -87,8 +87,20 @@ input::-webkit-inner-spin-button {
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
+  /* display: grid;
+  grid-template-columns: repeat(2, 50%); */
+}
+
+.item1{
+  float: left;
+  display: inline;
+  width: 50%;
+}
+
+.item2{
+  float: right;
+  display: inline;
+  width: 50%;
 }
 
 .mainDetailsClass{
@@ -155,7 +167,7 @@ select:focus {
   font-size: 20px;
   text-align: center;
   display: block;
-  margin: 15px auto 5px auto;
+  margin: 0 auto 0 auto;
   outline: none;
   border: 0px;
   transition: 0.3s;
@@ -167,4 +179,13 @@ select:focus {
 #save_settings:hover{
   color: var(--whitish);
   background-color: var(--dark-blue);
+}
+
+.dashboardTitle{
+  font-family: 'Dosis', sans-serif;
+  font-size: 23px;
+  position: absolute;
+  top: 2.5%;
+  left: 45%;
+  text-decoration: none;
 }

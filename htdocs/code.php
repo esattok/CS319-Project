@@ -4,7 +4,6 @@ if(!$con){
 }else{
   // echo "Connected";
   if(isset($_POST['register_btn'])){
-
     if(!empty($_POST['name']) && !empty($_POST['id']) && !empty($_POST['password']) && !empty($_POST['confirmPassword'])){
       $name = $_POST['name'];
       $id = $_POST['id'];

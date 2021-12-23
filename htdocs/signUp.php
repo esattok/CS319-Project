@@ -1,9 +1,7 @@
 <?php
-      session_start();
       require 'connection.php';
       require 'code.php';
       include('includes/header.php');
-      echo $_SESSION['uname'];
 ?>
 <title>Sign Up</title>
 <link rel="stylesheet" href="signUpStyles.css">

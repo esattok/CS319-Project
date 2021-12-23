@@ -649,3 +649,77 @@ li a:hover {
   padding-left: 30px;
   margin-top: 4px;
 }
+
+.login{
+  /* display: none; */
+}
+
+#bannerBtn2{
+  /* display: none; */
+}
+
+.signUpBtn{
+  /* display: none; */
+}
+
+/* .dashboardBtn{
+  display: none;
+} */
+
+.profileView{
+  height: 40px;
+  background-color: var(--light-blue);
+  display: block;
+}
+
+.logOut{
+  display: inline-block;
+  font-weight: 500;
+  float: right;
+  margin-right: 50px;
+  height: 10px;
+  color: var(--whitish);
+  margin-top: 7px;
+}
+
+.logOut:hover{
+  color: var(--dark-blue);
+}
+
+.fa-sign-out-alt{
+  display: inline-block;
+  float: right;
+  position: relative;
+  font-size: 20px;
+  top: -42px;
+  right: -10px;
+}
+
+.fa-sign-out-alt:hover{
+  color: var(--dark-blue);
+}
+
+#mainDashBtn{
+  background-color: transparent;
+  border: 0px;
+  font-family: 'Quicksand', sans-serif;
+  color: var(--whitish);
+  font-size: 20px;
+  transition: 0.2s;
+  margin-left: 28px;
+  margin-top: 5px;
+}
+
+#mainDashBtn:hover{
+  color: var(--dark-blue);
+}
+
+.child{
+  display: inline;
+  color: var(--whitish);
+  margin-left: 30px;
+}
+
+.logoutAnchor{
+  cursor: pointer;
+}

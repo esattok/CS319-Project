@@ -3,13 +3,24 @@
       require 'connection.php';
       require 'loginCode.php';
       include('includes/header.php');
-      // $user_data = check_login($con);
+      $loggedOut = true;
+      if (time() - $_SESSION['user_start'] > $timeoutVal) {
+        session_destroy();
+        $loggedOut = true;
+      }else{
+        $loggedOut = false;
+      }
 ?>
+
 <title>VitaMind</title>
 <link rel="stylesheet" href="styles.css">
 
 
   <!-- -----------------NavBar+Banner---------------------- -->
+  <div class="profileView">
+    <a href="dashboard.php"><button type="button" name="button" id = "mainDashBtn">Go to Dashboard</button></a>
+    <a id = "logoutAnchor" class="logoutAnchor" href="index.php"><h3 class = "logOut">Log Out <i class="fas fa-sign-out-alt"></i></h3></a>
+  </div>
   <div class="headerDiv">
     <?php include('includes/navbar.php') ?>
     <div class="bannerDiv">
@@ -19,11 +30,19 @@
       <div class="buttonDiv">
         <!-- <button type="button" name="button" id="bannerBtn1">Button 1</button> -->
         <a href = "regularLogin.php"><button type="button" name="button" id="bannerBtn2">Sign In</button></a>
-        <a href = "signUp.php"><button class="pushable">
+        <a href = "signUp.php"><button class="pushable signUpBtn">
           <span class="shadow"></span>
           <span class="edge"></span>
           <span class="front">
             Sign Up
+          </span>
+        </button></a>
+
+        <a href = "dashboard.php"><button class="pushable dashboardBtn">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front">
+            View Profile
           </span>
         </button></a>
       </div>
@@ -115,5 +134,42 @@
     </div>
   </div>
   <!-- -----------------Services Section---------------------- -->
+
+<?php
+if($loggedOut == false){
+echo '<style type="text/css">
+        #bannerBtn2 {
+          display: none;
+        }
+        .signUpBtn{
+          display: none;
+        }
+        .login{
+          display: none;
+        }
+        .profileView{
+          display:block;
+        }
+        </style>';
+      }else{
+        echo '<style type="text/css">
+                #bannerBtn2 {
+                  display: inline-block;
+                }
+                .signUpBtn{
+                  display: inline-block;
+                }
+                .login{
+                  display: inline-block;
+                }
+                .dashboardBtn{
+                  display: none;
+                }
+                .profileView{
+                  display:none;
+                }
+                </style>';
+      }
+ ?>
 
   <?php include('includes/footer.php') ?>

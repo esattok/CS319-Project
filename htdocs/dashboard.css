@@ -58,6 +58,10 @@ h3 {
   height: 10px;
 }
 
+.logOut:hover{
+  color: var(--dark-blue);
+}
+
 .fa-cog{
   color: var(--whitish);
   float: right;
