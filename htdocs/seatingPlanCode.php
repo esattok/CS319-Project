@@ -22,17 +22,6 @@ if(!$con){
       $result = pg_query($con, $query);
       header("Location: dashboard.php");
   }
-  else if(isset($_POST['save_seating'])){
-    $seatStatus = $_POST['seats'];
-    $globalSeat;
-    foreach ($seatStatus as $item) {
-      $globalSeat = $item;
-    }
-    // echo $globalSeat;
-    $query = "UPDATE public.student SET seatno = '$globalSeat' WHERE id = $id";
-    $result = pg_query($con, $query);
-    // header("Location: dashboard.php");
-  }
   pg_close($con);
   }
 ?>

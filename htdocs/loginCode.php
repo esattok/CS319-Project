@@ -32,7 +32,6 @@ if(!$con){
       $result = pg_query($con, $query);
       $val = pg_fetch_result($result, 0, 1);
       if(password_verify($password,$val)){
-        $msg = "Login Successful";
         header("Location: dashboard.php");
       }else{
         $msg = "Login Details Incorrect";

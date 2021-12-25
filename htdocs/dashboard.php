@@ -19,6 +19,7 @@
       <a href = "index.php"><img class = "smallLogo" src="Images/WebsiteIcons/SmallLogoFinal.png" alt=""></a>
       <!-- <br> -->
       <h3 class = "myProfile">My Profile</h3>
+      <a class="seatingAnchor" href="seatingPlan.php"><h3 class="seatingBtn">Manage Seating Plan</h3></a>
       <a class="settingsPage" href="studentSettings.php"><i class="fas fa-cog"></i></a>
       <a class="logoutAnchor" href="index.php"><h3 class = "logOut">Log Out <i class="fas fa-sign-out-alt"></i></h3></a>
       <hr class = "separator">

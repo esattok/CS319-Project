@@ -68,8 +68,7 @@
     studentBtn.style.visibility = "visible";
     adminBtn.style.visibility = "collapse";
   }
-
-
+  
   </script>
 
   <?php include('includes/footer.php') ?>

@@ -49,6 +49,14 @@ h3 {
   margin-top: 20px;
 }
 
+.seatingBtn{
+  display: inline;
+  font-weight: 500;
+  position: relative;
+  top: 2vh;
+  left: 2vw;
+}
+
 .logOut{
   display: inline;
   font-weight: 500;
@@ -178,15 +186,6 @@ margin-top: 15px;
   color: var(--dark-blue);
 }
 
-/* .healthBar{
-  width: 250px;
-  height: 40px;
-  background-image: linear-gradient(to right, #39ff14 , yellow, red);
-  display: block;
-  margin: 50px auto;
-  border-radius: 7px;
-  border: 2px solid var(--dark-blue);
-} */
 
 .healthBar {
     width: 250px;
@@ -203,4 +202,8 @@ margin-top: 15px;
 .healthPercentage{
   text-align: center;
   margin-top: -20px;
+}
+
+.seatingAnchor{
+  text-decoration: none;
 }

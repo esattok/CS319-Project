@@ -24,7 +24,7 @@
       <hr class = "separator">
     </div>
       <form id = "form1" class="mainDetailsClass" method="post" autocomplete="off">
-          <label for="date">Email:</label><br>
+          <label for="date">Date:</label><br>
           <input class = "settingsInput" type="datetime-local" name="date" placeholder="Select Date" value = "<?php echo $date ?>">
           <label for="type">Vaccine Type:</label><br>
           <input class = "settingsInput" type="text" name="type" placeholder="Vaccine Type" value = "<?php echo $type ?>">

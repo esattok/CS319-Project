@@ -76,7 +76,7 @@
       <p id="missionPara" class="belowBannerPara">This website will have various helpful faeatures which will make it easier for people to monitor the status of any COVID-19 related information</p>
       <br>
       <img src="Images/Scenery1.jpg" alt="" class="scenery1" id="aboutImage">
-      <button type="button" name="button" id="missionButton" class="belowBannerBtn">Learn More</button>
+      <!-- <button type="button" name="button" id="missionButton" class="belowBannerBtn">Learn More</button> -->
     </div>
 
     <div id="aboutDiv">
@@ -85,7 +85,7 @@
       <p id="aboutPara" class="belowBannerPara">Sed in deseruisse adipiscing argumentum, harum deserunt at eum. At aliquid reprehendunt qui</p>
       <br>
       <img src="Images/Scenery2.jpg" alt="" class="scenery2" id="aboutImage">
-      <button type="button" name="button" id="aboutButton" class="belowBannerBtn">Learn More</button>
+      <!-- <button type="button" name="button" id="aboutButton" class="belowBannerBtn">Learn More</button> -->
     </div>
 
     <div id="teamDiv">
@@ -94,7 +94,7 @@
       <p id="teamPara" class="belowBannerPara">An hinc zril sed, eos choro invenire complectitur no. Nec at wisi integre, per diam aliquid vituperata ad. Id reque dicit nemore has, omnis intellegam vix at, est ut velit appareat</p>
       <br>
       <img src="Images/Scenery3.jpg" alt="" class="scenery3" id="aboutImage">
-      <button type="button" name="button" id="teamButton" class="belowBannerBtn">Learn More</button>
+      <!-- <button type="button" name="button" id="teamButton" class="belowBannerBtn">Learn More</button> -->
     </div>
 
   </div>
