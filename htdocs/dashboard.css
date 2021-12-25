@@ -122,7 +122,7 @@ h3 {
   flex-basis: 45%;
 }
 
-.relationDetails{
+.appointmentDetails{
   flex-basis: 41%;
 }
 
@@ -176,4 +176,31 @@ margin-top: 15px;
 
 .fa-sign-out-alt:hover{
   color: var(--dark-blue);
+}
+
+/* .healthBar{
+  width: 250px;
+  height: 40px;
+  background-image: linear-gradient(to right, #39ff14 , yellow, red);
+  display: block;
+  margin: 50px auto;
+  border-radius: 7px;
+  border: 2px solid var(--dark-blue);
+} */
+
+.healthBar {
+    width: 250px;
+    height: 40px;
+    border: 2px solid var(--dark-blue);
+    position: relative;
+    margin: 40px auto;
+    border-radius: 7px;
+    background-image: linear-gradient(to right, #39ff14 , yellow, red);
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
+}
+
+.healthPercentage{
+  text-align: center;
+  margin-top: -20px;
 }

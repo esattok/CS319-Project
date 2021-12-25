@@ -3,18 +3,15 @@
       require 'connection.php';
       require 'dashboardCode.php';
       require 'loginCode.php';
+      require 'makeAppointmentCode.php';
+      require 'saveVaccineInfo.php';
       include('includes/header.php');
-      // $loggedOut = true;
-      // if (time() - $_SESSION['user_start'] > $timeoutVal) {
-      //   session_destroy();
-      //   $loggedOut = true;
-      // }else{
-      //   echo $_SESSION['uname'];
-      //   $loggedOut = false;
-      // }
-      // if($loggedOut){
-      //   header("Location: index.php");
-      // }
+      if (time() - $_SESSION['user_start'] > $timeoutVal) {
+        session_destroy();
+        $loggedOut = true;
+      }else{
+        $loggedOut = false;
+      }
 ?>
     <title>Dashboard - VitaMind</title>
     <link rel="stylesheet" href="dashboard.css">
@@ -47,18 +44,41 @@
       <div class="padder"></div>
       <div class="vaccinationDetails">
         <h2 class = "child vaccinationDetailsText">Vaccination Details</h2>
-        <h3 class = "child vaccinationStatus">Vaccination Status: </h3>
-        <h3 class = "child vaccinationDoses">Vaccine Doses: </h3>
-        <h3 class = "child vaccinationType">Vaccine Type: </h3>
-        <button class = "makeAndGet makeAppointment" type="button" name="button">Make Appointment</button>
+        <h3 class = "child vaccinationStatus">Vaccination Status: <?php echo $status ?></h3>
+        <h3 class = "child vaccinationDoses">Vaccine Doses: <?php echo $doses ?></h3>
+        <!-- <h3 class = "child vaccinationType">Vaccine Type: </h3> -->
+        <a href = "vaccinationDetails.php"><button class = "makeAndGet makeAppointment" type="button" name="button">Enter Vaccination Details</button></a>
       </div>
-      <div class="relationDetails">
-        <h2 class = "child relationDetailsText">Relation Details</h2>
-        <h3 class = "child relation1Status">Relation 1 Status: </h3>
-        <h3 class = "child relation2Status">Relation 2 Status: </h3>
-        <h3 class = "child relation3Status">Relation 3 Status: </h3>
-        <button class = "makeAndGet getInformation" type="button" name="button">Get Information</button>
+      <div class="appointmentDetails">
+        <h2 class = "child relationDetailsText">Appointment Details </h2>
+        <h3 class = "child relation1Status">Date: <?php echo $date ?></h3>
+        <h3 class = "child relation2Status">Vaccine Type: <?php echo $type ?></h3>
+        <a href = "makeAppointment.php"><button class = "makeAndGet makeAppointment" type="button" name="button">Make Appointment</button></a>
+        <!-- <h3 class = "child relation3Status">Relation 3 Status: </h3> -->
+        <!-- <button class = "makeAndGet getInformation" type="button" name="button">Get Information</button> -->
       </div>
     </div>
+    <div class="healthBarDiv">
+      <div class="healthBar">
+      </div>
+      <h3 id = "healthPercentage" class="healthPercentage">50%</h3>
+    </div>
+
+    <script type="text/javascript">
+    let healthBar = document.getElementsByClassName("healthPercentage")[0];
+    let healthBarDiv = document.getElementsByClassName("healthBar")[0];
+      if("<?php echo $covid19 ?>" == "Positive"){
+        healthBar.textContent = "100%";
+        healthBarDiv.style.backgroundSize = "100% 100%"
+      }
+      else if("<?php echo $covid19 ?>" == "Negative"){
+        healthBar.textContent = "0%";
+        healthBarDiv.style.backgroundSize = "0% 100%"
+      }
+      else if("<?php echo $covid19 ?>" == "Unsure"){
+        healthBar.textContent = "50%";
+        healthBarDiv.style.backgroundSize = "50% 100%"
+      }
+    </script>
 
   <?php include('includes/footer.php') ?>

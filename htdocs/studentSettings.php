@@ -5,16 +5,12 @@
       require 'dashboardCode.php';
       require 'loginCode.php';
       include('includes/header.php');
-      // $loggedOut = true;
-      // if (time() - $_SESSION['user_start'] > $timeoutVal) {
-      //   session_destroy();
-      //   $loggedOut = true;
-      // }else{
-      //   $loggedOut = false;
-      // }
-      // if($loggedOut){
-      //   header("Location: index.php");
-      // }
+      if (time() - $_SESSION['user_start'] > $timeoutVal) {
+        session_destroy();
+        $loggedOut = true;
+      }else{
+        $loggedOut = false;
+      }
 ?>
 <title>Settings</title>
 <link rel="stylesheet" href="studentSettingsStyles.css">

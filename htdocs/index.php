@@ -3,7 +3,6 @@
       require 'connection.php';
       require 'loginCode.php';
       include('includes/header.php');
-      $loggedOut = true;
       if (time() - $_SESSION['user_start'] > $timeoutVal) {
         session_destroy();
         $loggedOut = true;
@@ -11,7 +10,6 @@
         $loggedOut = false;
       }
 ?>
-
 <title>VitaMind</title>
 <link rel="stylesheet" href="styles.css">
 
@@ -19,7 +17,8 @@
   <!-- -----------------NavBar+Banner---------------------- -->
   <div class="profileView">
     <a href="dashboard.php"><button type="button" name="button" id = "mainDashBtn">Go to Dashboard</button></a>
-    <a id = "logoutAnchor" class="logoutAnchor" href="index.php"><h3 class = "logOut">Log Out <i class="fas fa-sign-out-alt"></i></h3></a>
+    <input value = "Logout" type="submit" name="log" id = "logoutAnchor" class="logoutAnchor"/>
+    <!-- <button id = "logoutAnchor" class="logoutAnchor" onclick="fun()"><h3 class = "logOut">Log Out <i class="fas fa-sign-out-alt"></i></h3></button> -->
   </div>
   <div class="headerDiv">
     <?php include('includes/navbar.php') ?>
