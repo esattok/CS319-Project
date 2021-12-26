@@ -80,7 +80,7 @@
     var seatArray = <?php echo json_encode($val); ?>;
     var idArray = <?php echo json_encode($idArr); ?>;
     for(let x = 0; x < seatArray.length; x++){
-      if(seatArray[x] != ""){
+      if(seatArray[x] != null){
         document.getElementById(seatArray[x]).checked = "true"
         document.getElementById(seatArray[x]).disabled = "true";
         var element = document.createElement("div");
