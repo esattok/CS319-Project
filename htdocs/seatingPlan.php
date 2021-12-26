@@ -14,7 +14,7 @@
         $loggedOut = false;
       }
 ?>
-<title>Settings</title>
+<title>Seating Plan</title>
 <link rel="stylesheet" href="seatingPlan.css">
 <div class="profileHeading">
   <a href = "index.php"><img class = "smallLogo" src="Images/WebsiteIcons/SmallLogoFinal.png" alt=""></a>
@@ -75,6 +75,7 @@
   </form>
 
   <script type="text/javascript">
+  window.onload = function() {
     let rowNo = "<?php echo $rows1 ?>"
     var seatArray = <?php echo json_encode($val); ?>;
     var idArray = <?php echo json_encode($idArr); ?>;
@@ -87,5 +88,6 @@
         document.getElementById('grid-container').appendChild(element);
       }
     }
+  }
   </script>
 <?php include('includes/footer.php') ?>

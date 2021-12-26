@@ -20,7 +20,7 @@ if(!$con){
       else if($password !== $confirmPassword){
          $msg = "Passwords don't match!";
        }else{
-         $query = "INSERT INTO student (id,password,name) VALUES ('$id', '$hash','$name')";
+         $query = "INSERT INTO public.student (id,password,name) VALUES ('$id', '$hash','$name')";
          header("Location: regularLogin.php");
        }
     }else{
@@ -38,7 +38,7 @@ if(!$con){
       if($password !== $confirmPassword){
          $msg = "Passwords don't match!";
        }else{
-         $query = "INSERT INTO admin (id,password,name) VALUES ('$id', '$hash','$name')";
+         $query = "INSERT INTO public.admin (id,password,name) VALUES ('$id', '$hash','$name')";
          header("Location: regularLogin.php");
        }
     }else{

@@ -27,7 +27,7 @@
         <div id = "errorMsg" class="error"><?php echo $msg ?></div>
         <input type="submit" name="loginBtn" value="Login" id="loginBtn">
         <h3 style="color: var(--whitish); margin-top: 10px">Don't have an account? <a href = "signUp.php" style="text-decoration: none; color: var(--light-blue)"><span>Sign Up</span></a></h3>
-        </form>
+      </form>
 
         <form id = "adminSignup" class="loginForm" method="post">
           <input type="number" minlength = "8" id="id" name="id_admin" placeholder="Admin ID">
@@ -68,7 +68,7 @@
     studentBtn.style.visibility = "visible";
     adminBtn.style.visibility = "collapse";
   }
-  
+
   </script>
 
   <?php include('includes/footer.php') ?>

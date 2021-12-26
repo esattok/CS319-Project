@@ -64,7 +64,6 @@
     <img src="Images/VaccineImage.jpg" alt="" class="aboutVaccineImage">
     <img src="Images/RedHeart.png" alt="" class="aboutHeartImage">
     <h2>About Us</h2>
-    <hr class="aboutLine">
     <br>
     <div class="topnav">
       <a class="active" href="#home" id="#missionNav">Mission</a>
@@ -75,25 +74,23 @@
       <h3 id="missionTitle" class="belowBannerTitle">Our goal is to create a website that will help people cope with the struggles related to COVID-19</h3>
       <p id="missionPara" class="belowBannerPara">This website will have various helpful faeatures which will make it easier for people to monitor the status of any COVID-19 related information</p>
       <br>
-      <img src="Images/Scenery1.jpg" alt="" class="scenery1" id="aboutImage">
+      <img src="Images/COVIDImg.jpg" alt="" class="scenery1" id="aboutImage">
       <!-- <button type="button" name="button" id="missionButton" class="belowBannerBtn">Learn More</button> -->
     </div>
 
     <div id="aboutDiv">
-      <h3 id="aboutTitle" class="belowBannerTitle">Lorem ipsum dolor sit amet, te pro veri cotidieque. An exerci facilis expetendis vim. Everti tacimates principes ad pro, vivendo accusamus ius ut. Pro sonet lobortis consequuntur et, et est nihil
-        mediocritatem. Recteque conceptam definitionem ea qui, platonem democritum usu an.</h3>
-      <p id="aboutPara" class="belowBannerPara">Sed in deseruisse adipiscing argumentum, harum deserunt at eum. At aliquid reprehendunt qui</p>
+      <h3 id="aboutTitle" class="belowBannerTitle">This website was created for everyday use so simplicity is the key to this site</h3>
+      <p id="aboutPara" class="belowBannerPara">This website was built using HTML, CSS, JavaScript for the front-end side. As for the backend, PHP was used to connect the front-end content to the database, which is PostgreSQL</p>
       <br>
-      <img src="Images/Scenery2.jpg" alt="" class="scenery2" id="aboutImage">
+      <img src="Images/html.jpg" alt="" class="scenery2" id="aboutImage">
       <!-- <button type="button" name="button" id="aboutButton" class="belowBannerBtn">Learn More</button> -->
     </div>
 
     <div id="teamDiv">
-      <h3 id="teamTitle" class="belowBannerTitle">Lorem ipsum dolor sit amet, est at mutat inani euripidis. Sed ex lorem clita possit. Pro prompta disputationi eu, ut gloriatur argumentum concludaturque his. An his nostrum corrumpit, cu mutat falli
-        meliore eam</h3>
-      <p id="teamPara" class="belowBannerPara">An hinc zril sed, eos choro invenire complectitur no. Nec at wisi integre, per diam aliquid vituperata ad. Id reque dicit nemore has, omnis intellegam vix at, est ut velit appareat</p>
+      <h3 id="teamTitle" class="belowBannerTitle">Bilkent University - CS 319</h3>
+      <p id="teamPara" class="belowBannerPara">As a group, we are students at Bilkent University. The name of the team we created in our CS319 course is 1H. We had a lot of fun doing this project. If you want to reach us, please contact us. Names of group members: Lamia Başak Amaç, Elifnur Alsaç, Esad İsmail Tök, Mohamed Wasim Mohamed Akram, Nima Ghaffarzadeh</p>
       <br>
-      <img src="Images/Scenery3.jpg" alt="" class="scenery3" id="aboutImage">
+      <img src="Images/teamwork2.png" alt="" class="scenery3" id="aboutImage">
       <!-- <button type="button" name="button" id="teamButton" class="belowBannerBtn">Learn More</button> -->
     </div>
 
@@ -105,31 +102,21 @@
   <div class="serviceDiv">
     <div class="concave">
     </div>
-    <h2 class="serviceTitle">Services</h2>
-    <hr class="serviceLine">
+    <h2 class="serviceTitle">Features</h2>
     <br>
     <div class="serviceColumns">
       <div class="service1" id="allServices">
-        <div class="cirlce1" id="allCircles">
-          <i class="fas fa-diagnoses"></i>
-        </div>
+        <img src="Images/med.png" alt="" class = "service1Img">
+        <h3 class = "text1">Our website offers medical support to all registered users</h3>
       </div>
       <div class="service2" id="allServices">
-        <div class="cirlce2" id="allCircles">
-          <i class="fas fa-diagnoses"></i>
-        </div>
+        <img src="Images/appointment1.png" alt="" class = "service2Img">
+        <h3 class = "text1">Make appointments with ease using our appointment management system</h3>
       </div>
       <div class="service3" id="allServices">
-        <div class="cirlce3" id="allCircles">
-          <i class="fas fa-diagnoses"></i>
-        </div>
+        <img src="Images/seating.png" alt="" class = "service3Img">
+        <h3 class = "text3">Manage your course seating plans according to the safety regulations </h3>
       </div>
-      <div class="service4" id="allServices">
-        <div class="cirlce4" id="allCircles">
-          <i class="fas fa-diagnoses"></i>
-        </div>
-      </div>
-
     </div>
   </div>
   <!-- -----------------Services Section---------------------- -->

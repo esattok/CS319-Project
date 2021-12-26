@@ -14,7 +14,7 @@
       }
 ?>
     <title>Dashboard - VitaMind</title>
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="adminDashboard.css">
     <div class="profileHeading">
       <a href = "index.php"><img class = "smallLogo" src="Images/WebsiteIcons/SmallLogoFinal.png" alt=""></a>
       <!-- <br> -->
@@ -68,6 +68,7 @@
       </div>
       <h3 id = "healthPercentage" class="healthPercentage">50%</h3>
     </div>
+
 
     <script type="text/javascript">
     let healthBar = document.getElementsByClassName("healthPercentage")[0];
